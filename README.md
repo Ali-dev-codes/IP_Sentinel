@@ -17,7 +17,7 @@
 
 ## 🛠️ Installation & Setup
 
-1. **Clone the Repository**
+1.Clone the Repository:
    ```bash
    git clone [https://github.com/Ali-dev-codes/IP_Sentinel.git](https://github.com/Ali-dev-codes/IP_Sentinel.git)
    cd IP_Sentinel
@@ -27,7 +27,6 @@
 
 ⚙️ Tech Stack
 Backend: Python 3.x / Django 5.x
-
 APIs: AbuseIPDB API & Geolocation Services
 Networking: ICMP Ping (OS Level)
 Frontend: Bootstrap 5 / Custom CSS
