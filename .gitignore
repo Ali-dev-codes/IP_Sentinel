@@ -1,13 +1,18 @@
+# البيئات الوهمية
 venv/
 env/
 Venv/
 
 db.sqlite3
 
+# ملفات بايثون المؤقتة
 __pycache__/
 *.pyc
 
+# ملفات النظام
 .DS_Store
 Thumbs.db
 
 .env
+
+.idea/
