@@ -1,34 +1,35 @@
-# 🛡️ IP-Sentinel: Network Security & SOC Tool
+# 🛡️ IP-Sentinel: Advanced IP Intelligence & Monitoring Tool
 
-**IP-Sentinel** is a professional network monitoring and IP management system built with **Django**. It is designed to help Security Operations Center (SOC) analysts track network assets and perform automated port scanning.
+**IP-Sentinel** is a comprehensive network security tool built with **Django**. It provides a 3-stage analysis for any IP address, combining threat intelligence, network availability, and geographical tracking in one sleek dashboard.
 
 ---
 
-## ✨ Key Features
-* **Automated Port Scanning:** Integrated with **Nmap** to detect open ports and services.
-* **IP Asset Management:** Easily add, edit, and track IP addresses in a centralized database.
-* **Security Dashboard:** A clean, responsive interface to visualize network status.
-* **Data Portability:** Support for importing/exporting data via Excel and CSV formats.
-* **Modern UI:** Built with Bootstrap 5 for a smooth user experience.
+## 🚀 The 3-Stage Analysis Process
+1.  **Security Reputation:** Integrates with **AbuseIPDB API** to check if an IP is reported for malicious activity (spam, hacking, etc.).
+2.  **Live Connectivity (Ping):** Performs a real-time ICMP Ping to verify if the host is **Online** or **Offline**.
+3.  **Geolocation Tracking:** Retrieves precise geographical data, including City, Country, and ISP information.
+
+## ✨ Core Features
+* **Bulk Import/Export:** Upload a list of IPs via files for mass scanning and export results for reporting.
+* **Threat Intelligence:** Instantly see the confidence score of an IP's maliciousness.
+* **Automated Monitoring:** Keep track of your network assets with a professional UI.
+* **Responsive Dashboard:** A modern, user-friendly interface to visualize all your IP data.
 
 ## 🛠️ Installation & Setup
 
-To run this project locally, follow these steps in your terminal:
-
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/Ali-dev-codes/IP_Sentinel.git](https://github.com/Ali-dev-codes/IP_Sentinel.git)
-cd IP_Sentinel
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/Ali-dev-codes/IP_Sentinel.git](https://github.com/Ali-dev-codes/IP_Sentinel.git)
+   cd IP_Sentinel
 2. Install Dependencies****pip install -r requirements.txt****
 3. Database Migration****python manage.py migrate****
 4. Start the Server****python manage.py runserver****
 
+⚙️ Tech Stack
+Backend: Python 3.x / Django 5.x
 
-Requirements:
-Python 3.x
-Django 5.x
-Nmap Engine: (Must be installed on your OS for the scanner to function).
+APIs: AbuseIPDB API & Geolocation Services
+Networking: ICMP Ping (OS Level)
+Frontend: Bootstrap 5 / Custom CSS
 
-Disclaimer:
-This tool is developed for educational and authorized security testing purposes only. Always ensure you have permission before scanning any network.
 Developed by [Ali]
